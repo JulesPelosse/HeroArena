@@ -1,0 +1,48 @@
+﻿<Window x:Class="HeroArena.Views.CombatWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Arène de Combat (Mode Survie)" Height="550" Width="600"
+        WindowStartupLocation="CenterScreen">
+
+    <StackPanel Margin="20">
+
+        <TextBlock Text="⚔️ COMBAT EN COURS" FontSize="24" FontWeight="Bold" HorizontalAlignment="Center"/>
+        <TextBlock Text="{Binding Score, StringFormat={}Score : {0}}" HorizontalAlignment="Center" Margin="0,0,0,20"/>
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,0,0,20">
+            <StackPanel Margin="20,0">
+                <TextBlock Text="{Binding PlayerHero.Name}" FontSize="18" Foreground="Blue" FontWeight="Bold"/>
+                <TextBlock Text="{Binding PlayerCurrentHP, StringFormat={}{0} HP}" FontSize="16"/>
+            </StackPanel>
+
+            <TextBlock Text="  VS  " FontSize="20" VerticalAlignment="Center"/>
+
+            <StackPanel Margin="20,0">
+                <TextBlock Text="{Binding EnemyHero.Name}" FontSize="18" Foreground="Red" FontWeight="Bold"/>
+                <TextBlock Text="{Binding EnemyCurrentHP, StringFormat={}{0} HP}" FontSize="16"/>
+            </StackPanel>
+        </StackPanel>
+
+        <TextBlock Text="Sélectionnez un sort :" FontWeight="Bold" Margin="0,0,0,5"/>
+        <ListBox x:Name="SpellList" 
+         ItemsSource="{Binding PlayerSpells}" 
+         DisplayMemberPath="Name"
+         Height="80" 
+         Margin="0,0,0,10"/>
+
+        <Button Content="Lancer l'attaque !" 
+                Click="AttackButton_Click"
+                Height="40" Background="LightGreen" FontWeight="Bold" FontSize="16"/>
+
+        <TextBlock Text="Journal de combat :" FontWeight="Bold" Margin="0,15,0,5"/>
+        <TextBox Text="{Binding CombatLog}" 
+                 Height="100" 
+                 IsReadOnly="True" 
+                 VerticalScrollBarVisibility="Auto" 
+                 Background="#EEE" 
+                 TextWrapping="Wrap"/>
+
+        <Button Content="Fermer" Click="Button_Click" Height="30" Width="100" Margin="0,20,0,0"/>
+
+    </StackPanel>
+</Window>
