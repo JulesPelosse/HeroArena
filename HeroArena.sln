@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.37111.16 d17.14
+VisualStudioVersion = 17.14.37111.16
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeroArena", "HeroArena\HeroArena.csproj", "{5F9431C7-2933-496B-87F7-4597BC648B99}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeroArena", "HeroArena\HeroArena.csproj", "{78AC895E-C907-8251-F9E1-6025A2879E90}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{5F9431C7-2933-496B-87F7-4597BC648B99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5F9431C7-2933-496B-87F7-4597BC648B99}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5F9431C7-2933-496B-87F7-4597BC648B99}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5F9431C7-2933-496B-87F7-4597BC648B99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78AC895E-C907-8251-F9E1-6025A2879E90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78AC895E-C907-8251-F9E1-6025A2879E90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78AC895E-C907-8251-F9E1-6025A2879E90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78AC895E-C907-8251-F9E1-6025A2879E90}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
